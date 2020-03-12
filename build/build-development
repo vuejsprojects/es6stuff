@@ -1,0 +1,6 @@
+#!/bin/bash
+
+watchify client/main.js -o public/bundle.js -dv &
+nodemon --exec npm run babel-node -- app.js
+
+

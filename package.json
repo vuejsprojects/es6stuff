@@ -1,0 +1,31 @@
+{
+  "@comment scripts start": [
+    "We want a continuous development script. ",
+    "Whenever your source code changes, the Browserify bundle will be rebuilt.",
+    "Whenever the server-side code changes, the application should be restarted"
+  ],
+  "scripts": {
+    "babel-node": "babel-node --stage 0",
+    "start": "build/build-development"
+  },
+  "@comment browserify": [
+    "client-side ES6, we were already going to compile our code into a bundle via browserify",
+    "Babelify leverages Babel to automatically transform our ES6 code into ES5 when bundling the code in our packag"
+  ],
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "stage": [
+            0
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0"
+  }
+}
