@@ -1,3 +1,7 @@
+# Debug
+Add configuration from Run menu item.  
+Select configuration with Run > icon on the left panel under Source Controle (CTRL SHIFT D)
+
 # Babel
 https://ponyfoo.com/articles/universal-react-babel#setting-up-babel  
 
