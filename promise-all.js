@@ -19,7 +19,7 @@ Promise.all([
     })
 ]).then(results => {
     clearInterval(interval);
-    console.log('It took 5 sec not 10 sec to fulfill: ', results);
+    console.log('It took 5 sec not 10 sec to fulfill: ', results);  //oputput ['first result', 'second result']
 });
 
 let n = 1;
