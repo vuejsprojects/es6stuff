@@ -26,3 +26,4 @@ async function helloAgain() {
 
 // a shorthand of then
 helloAgain().then(console.log);
+console.log('End of progrram waiting for the async code to execute')
